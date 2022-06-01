@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee View</title>
+</head>
+<body>
+<table>
+
+    <thead>
+
+    <th>
+        SN
+    </th>
+
+    <th>
+        Designation
+    </th>
+    <th>
+        Email
+    </th>
+      <th>
+        Phone
+    </th>
+     <th>
+        Update
+    </th>
+      <th>
+        Delete
+    </th>
+    </thead>
+    <tbody>
+    {% for employee in employees %}
+     <tr>
+
+         <td>
+
+             {{ forloop.counter }}.
+
+         </td>
+
+          <td>
+
+             {{ employee.user }}
+
+         </td>
+
+          <td>
+
+             {{ employee.designation }}
+
+         </td>
+          <td>
+
+             {{ employee.email }}
+
+         </td>
+          <td>
+
+             {{ employee.phone }}
+
+         </td>
+
+          <td>
+
+
+
+         </td>
+          <td>
+
+
+
+         </td>
+
+     </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

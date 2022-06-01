@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Employee</title>
+</head>
+<body>
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+    <fieldset>
+
+        <legend>
+            <h1>
+                Update employee
+            </h1>
+        </legend>
+
+        {{ form.as_p }}
+    </fieldset>
+    <input type="submit"   value="Update Employee">
+</form>
+
+</body>
+</html>
